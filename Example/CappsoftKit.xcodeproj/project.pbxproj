@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		028D51F31E0D9C4200635235 /* SampleDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D51F21E0D9C4200635235 /* SampleDataFetcher.swift */; };
+		028D51F51E0D9C4900635235 /* SamplePagedDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D51F41E0D9C4900635235 /* SamplePagedDataFetcher.swift */; };
+		028D51FB1E0D9CC300635235 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D51FA1E0D9CC300635235 /* MyCell.swift */; };
+		028D51FD1E0D9CE700635235 /* MyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D51FC1E0D9CE700635235 /* MyCellViewModel.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* TestViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -28,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		028D51F21E0D9C4200635235 /* SampleDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleDataFetcher.swift; sourceTree = "<group>"; };
+		028D51F41E0D9C4900635235 /* SamplePagedDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePagedDataFetcher.swift; sourceTree = "<group>"; };
+		028D51FA1E0D9CC300635235 /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		028D51FC1E0D9CE700635235 /* MyCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCellViewModel.swift; sourceTree = "<group>"; };
 		14AE896D65D2C0F6D1FF2907 /* CappsoftKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CappsoftKit.podspec; path = ../CappsoftKit.podspec; sourceTree = "<group>"; };
 		1718EB6BE50EA5DE192F9993 /* Pods-CappsoftKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CappsoftKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CappsoftKit_Tests/Pods-CappsoftKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2901EE7E47F9270561DD115B /* Pods-CappsoftKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CappsoftKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CappsoftKit_Example/Pods-CappsoftKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -37,7 +45,7 @@
 		607FACD01AFB9204008FA782 /* CappsoftKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CappsoftKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -69,6 +77,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		028D51F01E0D9C0500635235 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* TestViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		028D51F11E0D9C1B00635235 /* Fetchers */ = {
+			isa = PBXGroup;
+			children = (
+				028D51F21E0D9C4200635235 /* SampleDataFetcher.swift */,
+				028D51F41E0D9C4900635235 /* SamplePagedDataFetcher.swift */,
+			);
+			name = Fetchers;
+			sourceTree = "<group>";
+		};
+		028D51F61E0D9C7C00635235 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				028D51F71E0D9C8700635235 /* CellViewModels */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		028D51F71E0D9C8700635235 /* CellViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				028D51FC1E0D9CE700635235 /* MyCellViewModel.swift */,
+			);
+			name = CellViewModels;
+			sourceTree = "<group>";
+		};
+		028D51F81E0D9C8F00635235 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				028D51F91E0D9C9300635235 /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		028D51F91E0D9C9300635235 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				028D51FA1E0D9CC300635235 /* MyCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		06268A437A89B3450FF8511C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +159,11 @@
 		607FACD21AFB9204008FA782 /* Example for CappsoftKit */ = {
 			isa = PBXGroup;
 			children = (
+				028D51F81E0D9C8F00635235 /* Views */,
+				028D51F61E0D9C7C00635235 /* ViewModels */,
+				028D51F11E0D9C1B00635235 /* Fetchers */,
+				028D51F01E0D9C0500635235 /* ViewControllers */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -361,7 +421,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				028D51FD1E0D9CE700635235 /* MyCellViewModel.swift in Sources */,
+				028D51F31E0D9C4200635235 /* SampleDataFetcher.swift in Sources */,
+				028D51FB1E0D9CC300635235 /* MyCell.swift in Sources */,
+				028D51F51E0D9C4900635235 /* SamplePagedDataFetcher.swift in Sources */,
+				607FACD81AFB9204008FA782 /* TestViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +471,7 @@
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -454,6 +519,7 @@
 		607FACEE1AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -495,7 +561,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2D1DD12E0C84D9688F76AD5E /* Pods-CappsoftKit_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CappsoftKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -510,7 +576,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2901EE7E47F9270561DD115B /* Pods-CappsoftKit_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CappsoftKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -525,7 +591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6A0959505CFC7AA96D30380 /* Pods-CappsoftKit_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -546,7 +612,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1718EB6BE50EA5DE192F9993 /* Pods-CappsoftKit_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

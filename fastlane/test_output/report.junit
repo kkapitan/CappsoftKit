@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites name='CappsoftKit_Tests.xctest' tests='30' failures='0'>
   <testsuite name='CappsoftKit_Tests.DataSourceSpec' tests='5' failures='0'>
-    <testcase classname='CappsoftKit_Tests.DataSourceSpec' name='DataSource__stores_the_provider' time='0.003'/>
+    <testcase classname='CappsoftKit_Tests.DataSourceSpec' name='DataSource__stores_the_provider' time='0.005'/>
     <testcase classname='CappsoftKit_Tests.DataSourceSpec' name='DataSource__returns_count_of_provider_items' time='0.002'/>
     <testcase classname='CappsoftKit_Tests.DataSourceSpec' name='DataSource__returns_provider_items_as_items_to_present' time='0.001'/>
-    <testcase classname='CappsoftKit_Tests.DataSourceSpec' name='DataSource__when_asked_for_item_at_index_path__returns_correct_item_if_present' time='0.001'/>
+    <testcase classname='CappsoftKit_Tests.DataSourceSpec' name='DataSource__when_asked_for_item_at_index_path__returns_correct_item_if_present' time='0.002'/>
     <testcase classname='CappsoftKit_Tests.DataSourceSpec' name='DataSource__when_asked_for_item_at_index_path__returns_nil_if_item_is_not_present' time='0.001'/>
   </testsuite>
   <testsuite name='CappsoftKit_Tests.NibLoadableSpec' tests='1' failures='0'>
@@ -37,9 +37,9 @@
     <testcase classname='CappsoftKit_Tests.ReusableSpec' name='Reusable_protocol__when_implemented_by_cell__has_reuse_identifier_equal_to_the_class_name_of_cell' time='0.001'/>
   </testsuite>
   <testsuite name='CappsoftKit_Tests.TableViewExtensionsSpec' tests='4' failures='0'>
-    <testcase classname='CappsoftKit_Tests.TableViewExtensionsSpec' name='Table_View__when_cell_conforms_to_Reusable__can_register_cell' time='0.013'/>
-    <testcase classname='CappsoftKit_Tests.TableViewExtensionsSpec' name='Table_View__when_cell_conforms_to_Reusable__can_dequeue_cell' time='0.002'/>
-    <testcase classname='CappsoftKit_Tests.TableViewExtensionsSpec' name='Table_View__when_cell_conforms_to_Reusable_and_Nibloadable__can_register_cell' time='0.011'/>
-    <testcase classname='CappsoftKit_Tests.TableViewExtensionsSpec' name='Table_View__when_cell_conforms_to_Reusable_and_Nibloadable__can_dequeue_cell' time='0.002'/>
+    <testcase classname='CappsoftKit_Tests.TableViewExtensionsSpec' name='Table_View__when_cell_conforms_to_Reusable__can_register_cell' time='0.014'/>
+    <testcase classname='CappsoftKit_Tests.TableViewExtensionsSpec' name='Table_View__when_cell_conforms_to_Reusable__can_dequeue_cell' time='0.003'/>
+    <testcase classname='CappsoftKit_Tests.TableViewExtensionsSpec' name='Table_View__when_cell_conforms_to_Reusable_and_Nibloadable__can_register_cell' time='0.015'/>
+    <testcase classname='CappsoftKit_Tests.TableViewExtensionsSpec' name='Table_View__when_cell_conforms_to_Reusable_and_Nibloadable__can_dequeue_cell' time='0.003'/>
   </testsuite>
 </testsuites>

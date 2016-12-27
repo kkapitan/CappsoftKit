@@ -32,6 +32,10 @@ xcuserdata
 # CocoaPods
 Pods/
 
+# Fastlane
+fastlane/report.xml
+fastlane/test_output/
+
 ## User data
 Example/CappsoftKit.xcodeproj/project.xcworkspace/xcuserdata/*
 Example/CappsoftKit.xcodeproj/xcuserdata/*

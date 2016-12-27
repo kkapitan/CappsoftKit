@@ -1,19 +1,19 @@
 //
-//  MyCellViewModel.swift
+//  MySecondCellViewModel.swift
 //  CappsoftKit
 //
-//  Created by Krzysztof Kapitan on 23.12.2016.
+//  Created by Krzysztof Kapitan on 28.12.2016.
 //  Copyright © 2016 CocoaPods. All rights reserved.
 //
 
 import CappsoftKit
 
-struct MyCellViewModel: CellViewModelType {
+struct MySecondCellViewModel: CellViewModelType {
     typealias Model = String
     
     let testLabelText: String
     
     init(model: String) {
-        testLabelText = "First cell: \(model)"
+        testLabelText = "Second cell: \(model)"
     }
 }

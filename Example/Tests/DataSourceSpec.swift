@@ -24,12 +24,12 @@ class DataSourceSpec: QuickSpec {
     
     override func spec() {
         describe("DataSource") {
-            var dataSource: DataSource<CellTypeCell, TestProvider>!
+            var dataSource: DataSource<TestProvider>!
             var provider: TestProvider!
             
             beforeEach {
                 provider = TestProvider()
-                dataSource = DataSource<CellTypeCell, TestProvider>(provider: provider)
+                dataSource = DataSource<TestProvider>(provider: provider)
             }
             
             it("stores the provider") {

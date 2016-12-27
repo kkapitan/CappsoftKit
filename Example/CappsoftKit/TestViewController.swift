@@ -9,8 +9,11 @@
 import UIKit
 import CappsoftKit
 
+let MyCellDescriptor = CellDescriptor<String>(cellClass: MyCell.self)
+let MySecondCellDescriptor = CellDescriptor<String>(cellClass: MySecondCell.self)
+
 class TestViewController : UITableViewController {
-    var dataSource: TableDataSource<MyCell, Provider<SamplePagedDataFetcher>>?
+    var dataSource: TableDataSource<Provider<SamplePagedDataFetcher>>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +25,8 @@ class TestViewController : UITableViewController {
         setupDataSource()
         
         tableView.register(cell: MyCell.self)
+        tableView.register(cell: MySecondCell.self)
+        
         tableView.dataSource = dataSource
         
         dataSource?.provider.loadItems { [weak self] _ in
@@ -41,8 +46,10 @@ class TestViewController : UITableViewController {
     private func setupDataSource() {
         let fetcher = SamplePagedDataFetcher(page: Page(index:1, limit: 10))
         let provider = Provider<SamplePagedDataFetcher>(fetcher: fetcher)
-
-        dataSource = TableDataSource<MyCell, Provider<SamplePagedDataFetcher>>(provider:provider)
+        
+        dataSource = TableDataSource<Provider<SamplePagedDataFetcher>>(provider: provider) { _, indexPath in
+            return indexPath.row % 2 == 0 ? MyCellDescriptor : MySecondCellDescriptor
+        }
     }
 }
 

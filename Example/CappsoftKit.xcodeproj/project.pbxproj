@@ -23,6 +23,8 @@
 		028D52211E0FD9F400635235 /* CellTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 028D52201E0FD9F400635235 /* CellTypeCell.xib */; };
 		028D52261E125DED00635235 /* TestPageDescriptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D52241E125C9300635235 /* TestPageDescriptors.swift */; };
 		028D52271E125DF200635235 /* TestFetchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D52221E125C7000635235 /* TestFetchers.swift */; };
+		028D52291E1333CC00635235 /* MySecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D52281E1333CC00635235 /* MySecondCell.swift */; };
+		028D522B1E1333F400635235 /* MySecondCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D522A1E1333F400635235 /* MySecondCellViewModel.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* TestViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -59,6 +61,8 @@
 		028D52201E0FD9F400635235 /* CellTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTypeCell.xib; sourceTree = "<group>"; };
 		028D52221E125C7000635235 /* TestFetchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFetchers.swift; sourceTree = "<group>"; };
 		028D52241E125C9300635235 /* TestPageDescriptors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPageDescriptors.swift; sourceTree = "<group>"; };
+		028D52281E1333CC00635235 /* MySecondCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySecondCell.swift; sourceTree = "<group>"; };
+		028D522A1E1333F400635235 /* MySecondCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySecondCellViewModel.swift; sourceTree = "<group>"; };
 		14AE896D65D2C0F6D1FF2907 /* CappsoftKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CappsoftKit.podspec; path = ../CappsoftKit.podspec; sourceTree = "<group>"; };
 		1718EB6BE50EA5DE192F9993 /* Pods-CappsoftKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CappsoftKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CappsoftKit_Tests/Pods-CappsoftKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2901EE7E47F9270561DD115B /* Pods-CappsoftKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CappsoftKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CappsoftKit_Example/Pods-CappsoftKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				028D51FC1E0D9CE700635235 /* MyCellViewModel.swift */,
+				028D522A1E1333F400635235 /* MySecondCellViewModel.swift */,
 			);
 			name = CellViewModels;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				028D51FA1E0D9CC300635235 /* MyCell.swift */,
+				028D52281E1333CC00635235 /* MySecondCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -468,8 +474,10 @@
 				028D51F31E0D9C4200635235 /* SampleDataFetcher.swift in Sources */,
 				028D51FB1E0D9CC300635235 /* MyCell.swift in Sources */,
 				028D51F51E0D9C4900635235 /* SamplePagedDataFetcher.swift in Sources */,
+				028D522B1E1333F400635235 /* MySecondCellViewModel.swift in Sources */,
 				607FACD81AFB9204008FA782 /* TestViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				028D52291E1333CC00635235 /* MySecondCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,8 @@
 
 import Foundation
 
-internal class DataSource<Cell: CellType, Provider: DataProvidable> : NSObject where Cell.ViewModel.Model == Provider.Element {
-    typealias Element = Cell.ViewModel.Model
+internal class DataSource<Provider: DataProvidable> : NSObject {
+    typealias Element = Provider.Element
     
     public let provider: Provider
     

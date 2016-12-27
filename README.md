@@ -1,9 +1,6 @@
 # CappsoftKit
 
-[![CI Status](http://img.shields.io/travis/Krzysztof/CappsoftKit.svg?style=flat)](https://travis-ci.org/Krzysztof/CappsoftKit)
-[![Version](https://img.shields.io/cocoapods/v/CappsoftKit.svg?style=flat)](http://cocoapods.org/pods/CappsoftKit)
-[![License](https://img.shields.io/cocoapods/l/CappsoftKit.svg?style=flat)](http://cocoapods.org/pods/CappsoftKit)
-[![Platform](https://img.shields.io/cocoapods/p/CappsoftKit.svg?style=flat)](http://cocoapods.org/pods/CappsoftKit)
+[![CI Status](http://img.shields.io/travis/kkapitan/CappsoftKit.svg?style=flat)](https://travis-ci.org/Krzysztof/CappsoftKit)
 
 ## Example
 

@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Collection of wrappers, utilities, and solutions used by me during iOS app development in Swift. This is still in development. The best way to use it right now is to add it as a development pod. 
                        DESC
 
   s.homepage         = 'https://github.com/kkapitan/CappsoftKit'

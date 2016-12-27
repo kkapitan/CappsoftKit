@@ -12,5 +12,5 @@ public protocol DataProvidable {
     associatedtype Element
     
     var items: [Element]? { get }
-    func loadItems(completion: (ItemsFetchingResult<Element>) -> ())
+    func loadItems(completion: @escaping (ItemsFetchingResult<Element>) -> ())
 }

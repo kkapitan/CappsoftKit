@@ -11,12 +11,23 @@
 		028D51F51E0D9C4900635235 /* SamplePagedDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D51F41E0D9C4900635235 /* SamplePagedDataFetcher.swift */; };
 		028D51FB1E0D9CC300635235 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D51FA1E0D9CC300635235 /* MyCell.swift */; };
 		028D51FD1E0D9CE700635235 /* MyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D51FC1E0D9CE700635235 /* MyCellViewModel.swift */; };
+		028D52031E0EA9AC00635235 /* PageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D52021E0EA9AC00635235 /* PageSpec.swift */; };
+		028D52091E0EB54300635235 /* ReusableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D52071E0EB52900635235 /* ReusableSpec.swift */; };
+		028D52121E0EBC9A00635235 /* NibLoadableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D520A1E0EB8C500635235 /* NibLoadableSpec.swift */; };
+		028D52131E0EBC9D00635235 /* TableViewExtensionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D520C1E0EB8D200635235 /* TableViewExtensionsSpec.swift */; };
+		028D52141E0EBCA200635235 /* DataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D520E1E0EB8D800635235 /* DataSourceSpec.swift */; };
+		028D52151E0EBCA600635235 /* ProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D52101E0EB8E800635235 /* ProviderSpec.swift */; };
+		028D521B1E0FD7BF00635235 /* TestCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D52171E0FD75200635235 /* TestCells.swift */; };
+		028D521C1E0FD7CC00635235 /* ReusableNibLoadableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 028D52191E0FD77600635235 /* ReusableNibLoadableCell.xib */; };
+		028D521F1E0FD9B900635235 /* TestViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D521D1E0FD9A000635235 /* TestViewModels.swift */; };
+		028D52211E0FD9F400635235 /* CellTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 028D52201E0FD9F400635235 /* CellTypeCell.xib */; };
+		028D52261E125DED00635235 /* TestPageDescriptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D52241E125C9300635235 /* TestPageDescriptors.swift */; };
+		028D52271E125DF200635235 /* TestFetchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D52221E125C7000635235 /* TestFetchers.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* TestViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		84949A56F0FF5B4325D45DB9 /* Pods_CappsoftKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372D88D69AFB46CB82551FA6 /* Pods_CappsoftKit_Example.framework */; };
 		E3ECB5EEE75455CEF56C58BF /* Pods_CappsoftKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B609F07DDEE0A040CFAF281 /* Pods_CappsoftKit_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +47,18 @@
 		028D51F41E0D9C4900635235 /* SamplePagedDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePagedDataFetcher.swift; sourceTree = "<group>"; };
 		028D51FA1E0D9CC300635235 /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		028D51FC1E0D9CE700635235 /* MyCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCellViewModel.swift; sourceTree = "<group>"; };
+		028D52021E0EA9AC00635235 /* PageSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageSpec.swift; sourceTree = "<group>"; };
+		028D52071E0EB52900635235 /* ReusableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableSpec.swift; sourceTree = "<group>"; };
+		028D520A1E0EB8C500635235 /* NibLoadableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableSpec.swift; sourceTree = "<group>"; };
+		028D520C1E0EB8D200635235 /* TableViewExtensionsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewExtensionsSpec.swift; sourceTree = "<group>"; };
+		028D520E1E0EB8D800635235 /* DataSourceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceSpec.swift; sourceTree = "<group>"; };
+		028D52101E0EB8E800635235 /* ProviderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderSpec.swift; sourceTree = "<group>"; };
+		028D52171E0FD75200635235 /* TestCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCells.swift; sourceTree = "<group>"; };
+		028D52191E0FD77600635235 /* ReusableNibLoadableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReusableNibLoadableCell.xib; sourceTree = "<group>"; };
+		028D521D1E0FD9A000635235 /* TestViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewModels.swift; sourceTree = "<group>"; };
+		028D52201E0FD9F400635235 /* CellTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTypeCell.xib; sourceTree = "<group>"; };
+		028D52221E125C7000635235 /* TestFetchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFetchers.swift; sourceTree = "<group>"; };
+		028D52241E125C9300635235 /* TestPageDescriptors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPageDescriptors.swift; sourceTree = "<group>"; };
 		14AE896D65D2C0F6D1FF2907 /* CappsoftKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CappsoftKit.podspec; path = ../CappsoftKit.podspec; sourceTree = "<group>"; };
 		1718EB6BE50EA5DE192F9993 /* Pods-CappsoftKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CappsoftKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CappsoftKit_Tests/Pods-CappsoftKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2901EE7E47F9270561DD115B /* Pods-CappsoftKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CappsoftKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CappsoftKit_Example/Pods-CappsoftKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -51,7 +74,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* CappsoftKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CappsoftKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6E467EB79DF68A309F6348D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8ED8E3E16AA26B4D97F0CB0E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A6A0959505CFC7AA96D30380 /* Pods-CappsoftKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CappsoftKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CappsoftKit_Tests/Pods-CappsoftKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +148,19 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		028D52161E0FD6E800635235 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				028D521D1E0FD9A000635235 /* TestViewModels.swift */,
+				028D52171E0FD75200635235 /* TestCells.swift */,
+				028D52191E0FD77600635235 /* ReusableNibLoadableCell.xib */,
+				028D52201E0FD9F400635235 /* CellTypeCell.xib */,
+				028D52221E125C7000635235 /* TestFetchers.swift */,
+				028D52241E125C9300635235 /* TestPageDescriptors.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		06268A437A89B3450FF8511C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +219,13 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				028D52161E0FD6E800635235 /* Resources */,
+				028D52021E0EA9AC00635235 /* PageSpec.swift */,
+				028D52071E0EB52900635235 /* ReusableSpec.swift */,
+				028D520A1E0EB8C500635235 /* NibLoadableSpec.swift */,
+				028D520C1E0EB8D200635235 /* TableViewExtensionsSpec.swift */,
+				028D520E1E0EB8D800635235 /* DataSourceSpec.swift */,
+				028D52101E0EB8E800635235 /* ProviderSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -311,6 +352,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				028D52211E0FD9F400635235 /* CellTypeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				028D521C1E0FD7CC00635235 /* ReusableNibLoadableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +477,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				028D52141E0EBCA200635235 /* DataSourceSpec.swift in Sources */,
+				028D52151E0EBCA600635235 /* ProviderSpec.swift in Sources */,
+				028D52031E0EA9AC00635235 /* PageSpec.swift in Sources */,
+				028D52121E0EBC9A00635235 /* NibLoadableSpec.swift in Sources */,
+				028D52131E0EBC9D00635235 /* TableViewExtensionsSpec.swift in Sources */,
+				028D52271E125DF200635235 /* TestFetchers.swift in Sources */,
+				028D521B1E0FD7BF00635235 /* TestCells.swift in Sources */,
+				028D521F1E0FD9B900635235 /* TestViewModels.swift in Sources */,
+				028D52091E0EB54300635235 /* ReusableSpec.swift in Sources */,
+				028D52261E125DED00635235 /* TestPageDescriptors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,7 +653,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -618,7 +670,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

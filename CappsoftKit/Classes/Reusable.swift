@@ -14,6 +14,6 @@ public protocol Reusable {
 
 public extension Reusable where Self: UITableViewCell {
     static var reuseIdentifier: String {
-        return NSStringFromClass(self).components(separatedBy: ".").last!
+        return String(describing: self)
     }
 }

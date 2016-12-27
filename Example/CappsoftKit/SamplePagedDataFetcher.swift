@@ -9,14 +9,12 @@
 import CappsoftKit
 
 class SamplePagedDataFetcher: PagedDataFetchable {
-    var fetched: [String]
     var page: Page
     
     typealias Element = String
     
-    init(limit: Int) {
-        self.fetched = []
-        self.page = Page(index: 1, limit: limit)
+    required init(page: Page) {
+        self.page = page
     }
     
     func fetchItems(page: Page, completion: (ItemsFetchingResult<String>) -> ()) {

@@ -8,24 +8,34 @@
 
 import Foundation
 
-public struct Page {
+public protocol PageDescriptor: Equatable {
+    var index: Int { get }
+    var limit: Int { get }
+    
+    static var next: (Self) -> Self { get }
+    static var first: (Self) -> Self { get }
+}
+
+public struct Page: PageDescriptor {
     public let index: Int
     public let limit: Int
     
-    var next: Page {
-        return Page(index: index + 1, limit: limit)
+    public static var next = { (page: Page) in
+        return Page(index: page.index + 1, limit: page.limit)
     }
     
-    var isFirst: Bool {
-        return index == 1
+    public static var first = { (page: Page) in
+        return Page(index: 1, limit: page.limit)
     }
-    
-    var first: Page {
-        return Page(index: 1, limit: limit)
-    }
-    
+
     public init(index: Int, limit: Int) {
         self.index = index
         self.limit = limit
+    }
+}
+
+extension Page: Equatable {
+    public static func == (lhs: Page, rhs: Page) -> Bool {
+        return lhs.index == rhs.index;
     }
 }

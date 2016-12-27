@@ -11,7 +11,7 @@ import Foundation
 public class Provider<Fetcher : DataFetchable> : DataProvidable {
     public typealias Element = Fetcher.Element
     
-    private(set) public var items: [Element]?
+    fileprivate(set) public var items: [Element]?
     
     let fetcher: Fetcher
     
@@ -20,10 +20,13 @@ public class Provider<Fetcher : DataFetchable> : DataProvidable {
         self.fetcher = fetcher
     }
     
-    public func loadItems(completion: (ItemsFetchingResult<Element>) -> ()) {
-        fetcher.fetchItems { (result) in
-            if case .success(let items) = result {
-                self.items = items
+    public func loadItems(completion: @escaping (ItemsFetchingResult<Element>) -> ()) {
+        fetcher.fetchItems  { [weak self] result in
+            if case .success(let newItems) = result {
+                guard let items = self?.items else { return }
+                
+                self?.items = Array(items.dropLast(newItems.count))
+                self?.items?.append(contentsOf: newItems)
             }
             
             completion(result)
@@ -32,17 +35,23 @@ public class Provider<Fetcher : DataFetchable> : DataProvidable {
 }
 
 public extension Provider where Fetcher: PagedDataFetchable {
-    func loadMore(completion: ItemsFetchingCompletion<Element>) {
-        fetcher.page = fetcher.page.next
-        
-        loadItems(completion: completion)
+    func loadMore(completion: @escaping ItemsFetchingCompletion<Element>) {
+        fetcher.fetchNext { [weak self] result in
+            if case .success(let newItems) = result {
+                self?.items?.append(contentsOf: newItems)
+            }
+            
+            completion(result)
+        }
     }
     
-    func reloadItems(completion: ItemsFetchingCompletion<Element>) {
-        fetcher.page = fetcher.page.first
-        
-        loadItems(completion: completion)
+    func loadFirst(completion: @escaping ItemsFetchingCompletion<Element>) {
+        fetcher.fetchFirst { [weak self] result in
+            if case .success(let newItems) = result {
+                self?.items = newItems
+            }
+            
+            completion(result)
+        }
     }
 }
-
-

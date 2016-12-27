@@ -9,26 +9,29 @@
 import Foundation
 
 public protocol PagedDataFetchable : class, DataFetchable {
-    var page: Page { get set }
-    var fetched: [Element] { get set }
+    associatedtype Page: PageDescriptor
     
-    func fetchItems(page: Page, completion: ItemsFetchingCompletion<Element>)
+    var page: Page { get set }
+    
+    func fetchItems(page: Page, completion: ItemsFetchingCompletion<Element>)    
 }
 
 public extension PagedDataFetchable {
+    
     func fetchItems(completion: ItemsFetchingCompletion<Element>) {
-        fetchItems(page: page) { result in
-            guard case .success(let items) = result else {
-                completion(result)
-                return
-            }
-            
-            page.isFirst
-                ? fetched = items
-                : fetched.append(contentsOf: items)
-            
-            completion(.success(items: fetched))
-        }
+        fetchItems(page: page, completion: completion)
+    }
+    
+    func fetchNext(completion: ItemsFetchingCompletion<Element>) {
+        page = Page.next(page)
+        
+        fetchItems(page: page, completion: completion)
+    }
+    
+    func fetchFirst(completion: ItemsFetchingCompletion<Element>) {
+        page = Page.first(page)
+        
+        fetchItems(page: page, completion: completion)
     }
 }
 

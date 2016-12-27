@@ -8,19 +8,24 @@
 
 import Foundation
 
-public protocol NibLoadable {
+public protocol NibLoadable : class {
     static var nibName: String { get }
+    static var bundle: Bundle { get }
 }
 
-public  extension NibLoadable {
+public extension NibLoadable {
     static var nib: UINib {
-        return UINib(nibName: nibName, bundle: nil)
+        return UINib(nibName: nibName, bundle: bundle)
+    }
+    
+    static var bundle: Bundle {
+        return Bundle.main
     }
 }
 
 public extension NibLoadable where Self: UIView {
-    static var view: UIView? {
-        return Bundle.main.loadNibNamed(nibName, owner: nil, options: nil) as? Self
+    static var view: Self? {
+        return bundle.loadNibNamed(nibName, owner: nil, options: nil) as? Self
     }
 }
 

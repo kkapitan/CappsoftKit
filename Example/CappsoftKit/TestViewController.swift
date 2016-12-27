@@ -10,7 +10,7 @@ import UIKit
 import CappsoftKit
 
 class TestViewController : UITableViewController {
-    var dataSource: TableDataSource<MyCell, Provider<SampleDataFetcher>>?
+    var dataSource: TableDataSource<MyCell, Provider<SamplePagedDataFetcher>>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +27,22 @@ class TestViewController : UITableViewController {
         dataSource?.provider.loadItems { [weak self] _ in
             self?.tableView.reloadData()
         }
+        
+        dataSource?.provider.loadMore(completion: { [weak self] _ in
+            self?.tableView.reloadData()
+        })
+
+        dataSource?.provider.loadMore(completion: { [weak self] _ in
+            self?.tableView.reloadData()
+        })
+
     }
     
     private func setupDataSource() {
-        let fetcher = SampleDataFetcher()
-        let provider = Provider<SampleDataFetcher>(fetcher: fetcher)
+        let fetcher = SamplePagedDataFetcher(page: Page(index:1, limit: 10))
+        let provider = Provider<SamplePagedDataFetcher>(fetcher: fetcher)
 
-        dataSource = TableDataSource<MyCell, Provider<SampleDataFetcher>>(provider:provider)
+        dataSource = TableDataSource<MyCell, Provider<SamplePagedDataFetcher>>(provider:provider)
     }
 }
 

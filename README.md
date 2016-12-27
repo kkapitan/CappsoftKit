@@ -27,3 +27,15 @@ Krzysztof, krzysztof.kapitan@gmail.com
 ## License
 
 CappsoftKit is available under the MIT license. See the LICENSE file for more info.
+
+## To Do
+
+- [ ] Add CollectionViewDataSource
+- [ ] Add support for Sections in DataSource (check if composite pattern can be applied)
+- [ ] Add support for multiple cells via cell descriptors
+- [ ] Add API client + JSON encoding classes/protocols
+- [ ] Add api communication + JSON encoding classes/protocols
+- [ ] Add storage classes/protocols
+- [ ] Add view extensions
+- [ ] Add documentation
+- [ ] Update example

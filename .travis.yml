@@ -9,6 +9,7 @@ podfile: Example/Podfile
 gemfile: Gemfile
 
 before_install:
+- swift --version
 - gem install bundler
 - bundle install
 - bundle exec pod repo update --silent
@@ -18,4 +19,4 @@ script:
 - bundle exec pod lib lint
 
 os:
-- osx
+=

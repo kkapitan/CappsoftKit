@@ -22,7 +22,7 @@ class NibLoadableSpec: QuickSpec {
             
             context("when implemented by View") {
                 it("can instantiate the view") {
-                    expect(ReusableNibLoadableCell.view).toNot(beNil())
+                    expect(ReusableNibLoadableCell.view).to(beNil())
                 }
             }
         }

@@ -32,8 +32,13 @@ if git.modified_files.empty? && git.added_files.empty? && git.deleted_files.empt
 end
 
 # This comes from `./danger_plugins/protect_files.rb` which is automatically parsed by Danger
-#files.protect_files(path: "danger.gemspec", message: ".gemspec modified", fail_build: false)
 
-junit.parse "fastlane/test_output/report.junit"
-junit.headers = [:file, :name]
+for file in ["Dangerfile", "Example/Podfile", "Gemfile"] do
+	warn("#{file} is altered") if git.modified_files.include? file
+	fail("#{file} is deleted") if git.deleted_files.include? file
+end
+
+`cat fastlane/test_output/report.junit | tr -s "_" " " > report.junit`
+
+junit.parse "report.junit"
 junit.report

@@ -11,13 +11,18 @@ import Nimble
 @testable import CappsoftKit
 
 class NibLoadableSpec: QuickSpec {
-    class ReusableCell: UITableViewCell, Reusable {}
     
     override func spec() {
-        describe("Reusable protocol") {
-            context("when implemented by cell") {
-                it("has reuse identifier equal to the class name of cell") {
-                    expect(ReusableCell.reuseIdentifier).to(equal("ReusableCell"))
+        describe("NibLoadable protocol") {
+            context("when implemented by Reusable") {
+                it("has nib name equal to the reuse identifier") {
+                    expect(ReusableNibLoadableCell.nibName).to(equal(ReusableNibLoadableCell.reuseIdentifier))
+                }
+            }
+            
+            context("when implemented by View") {
+                it("can instantiate the view") {
+                    expect(ReusableNibLoadableCell.view).toNot(beNil())
                 }
             }
         }

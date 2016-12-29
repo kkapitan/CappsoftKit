@@ -25,7 +25,7 @@ public extension NibLoadable {
 
 public extension NibLoadable where Self: UIView {
     static var view: Self? {
-        return bundle.loadNibNamed(nibName, owner: nil, options: nil) as? Self
+        return bundle.loadNibNamed(nibName, owner: nil, options: nil)?[0] as? Self
     }
 }
 

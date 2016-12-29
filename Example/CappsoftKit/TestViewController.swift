@@ -40,7 +40,6 @@ class TestViewController : UITableViewController {
         dataSource?.provider.loadMore(completion: { [weak self] _ in
             self?.tableView.reloadData()
         })
-
     }
     
     private func setupDataSource() {

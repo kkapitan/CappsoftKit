@@ -26,6 +26,9 @@
 		028D52291E1333CC00635235 /* MySecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D52281E1333CC00635235 /* MySecondCell.swift */; };
 		028D522B1E1333F400635235 /* MySecondCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D522A1E1333F400635235 /* MySecondCellViewModel.swift */; };
 		029457A91E1454E0007B1A06 /* CellDescriptorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029457A71E1454B8007B1A06 /* CellDescriptorSpec.swift */; };
+		029457AE1E147753007B1A06 /* TestProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029457AC1E14774F007B1A06 /* TestProviders.swift */; };
+		029457AF1E1477BF007B1A06 /* TableDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029457AA1E147723007B1A06 /* TableDataSourceSpec.swift */; };
+		029457B31E159D1C007B1A06 /* DataSourceSharedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029457B11E159CEF007B1A06 /* DataSourceSharedExample.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* TestViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -65,6 +68,9 @@
 		028D52281E1333CC00635235 /* MySecondCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySecondCell.swift; sourceTree = "<group>"; };
 		028D522A1E1333F400635235 /* MySecondCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySecondCellViewModel.swift; sourceTree = "<group>"; };
 		029457A71E1454B8007B1A06 /* CellDescriptorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDescriptorSpec.swift; sourceTree = "<group>"; };
+		029457AA1E147723007B1A06 /* TableDataSourceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataSourceSpec.swift; sourceTree = "<group>"; };
+		029457AC1E14774F007B1A06 /* TestProviders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProviders.swift; sourceTree = "<group>"; };
+		029457B11E159CEF007B1A06 /* DataSourceSharedExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceSharedExample.swift; sourceTree = "<group>"; };
 		14AE896D65D2C0F6D1FF2907 /* CappsoftKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CappsoftKit.podspec; path = ../CappsoftKit.podspec; sourceTree = "<group>"; };
 		1718EB6BE50EA5DE192F9993 /* Pods-CappsoftKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CappsoftKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CappsoftKit_Tests/Pods-CappsoftKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2901EE7E47F9270561DD115B /* Pods-CappsoftKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CappsoftKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CappsoftKit_Example/Pods-CappsoftKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				028D521D1E0FD9A000635235 /* TestViewModels.swift */,
+				029457AC1E14774F007B1A06 /* TestProviders.swift */,
 				028D52171E0FD75200635235 /* TestCells.swift */,
 				028D52191E0FD77600635235 /* ReusableNibLoadableCell.xib */,
 				028D52201E0FD9F400635235 /* CellTypeCell.xib */,
@@ -167,6 +174,14 @@
 				028D52241E125C9300635235 /* TestPageDescriptors.swift */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		029457B01E159CDC007B1A06 /* SharedExamples */ = {
+			isa = PBXGroup;
+			children = (
+				029457B11E159CEF007B1A06 /* DataSourceSharedExample.swift */,
+			);
+			name = SharedExamples;
 			sourceTree = "<group>";
 		};
 		06268A437A89B3450FF8511C /* Frameworks */ = {
@@ -227,9 +242,11 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				029457B01E159CDC007B1A06 /* SharedExamples */,
 				028D52161E0FD6E800635235 /* Resources */,
 				028D52021E0EA9AC00635235 /* PageSpec.swift */,
 				029457A71E1454B8007B1A06 /* CellDescriptorSpec.swift */,
+				029457AA1E147723007B1A06 /* TableDataSourceSpec.swift */,
 				028D52071E0EB52900635235 /* ReusableSpec.swift */,
 				028D520A1E0EB8C500635235 /* NibLoadableSpec.swift */,
 				028D520C1E0EB8D200635235 /* TableViewExtensionsSpec.swift */,
@@ -490,13 +507,16 @@
 			files = (
 				028D52141E0EBCA200635235 /* DataSourceSpec.swift in Sources */,
 				028D52151E0EBCA600635235 /* ProviderSpec.swift in Sources */,
+				029457B31E159D1C007B1A06 /* DataSourceSharedExample.swift in Sources */,
 				028D52031E0EA9AC00635235 /* PageSpec.swift in Sources */,
 				029457A91E1454E0007B1A06 /* CellDescriptorSpec.swift in Sources */,
+				029457AE1E147753007B1A06 /* TestProviders.swift in Sources */,
 				028D52121E0EBC9A00635235 /* NibLoadableSpec.swift in Sources */,
 				028D52131E0EBC9D00635235 /* TableViewExtensionsSpec.swift in Sources */,
 				028D52271E125DF200635235 /* TestFetchers.swift in Sources */,
 				028D521B1E0FD7BF00635235 /* TestCells.swift in Sources */,
 				028D521F1E0FD9B900635235 /* TestViewModels.swift in Sources */,
+				029457AF1E1477BF007B1A06 /* TableDataSourceSpec.swift in Sources */,
 				028D52091E0EB54300635235 /* ReusableSpec.swift in Sources */,
 				028D52261E125DED00635235 /* TestPageDescriptors.swift in Sources */,
 			);

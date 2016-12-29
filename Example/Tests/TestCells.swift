@@ -23,3 +23,11 @@ class CellTypeCell: UITableViewCell, CellType {
         textLabel?.text = viewModel.labelText
     }
 }
+
+class SecondCellTypeCell: UITableViewCell, CellType {
+    typealias ViewModel = CellViewModelTypeViewModel
+    
+    func populateWithViewModel(viewModel: CellViewModelTypeViewModel) {
+        textLabel?.text = viewModel.labelText
+    }
+}

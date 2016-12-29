@@ -16,6 +16,7 @@ before_install:
 script:
 - bundle exec fastlane ios test
 - bundle exec pod lib lint
+- bundle exec danger
 
 os:
 - osx
